@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  height: 520px;
+  width: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .heading {
+      font-size: 40px;
+      text-align: center;
+    }
+    .title {
+      padding: 10px 15px;
+      background-color: black;
+      border-radius: 100px;
+      color: white;
+      font-weight: bold;
+    }
+    .moreWrapper{
+        display: flex;
+        align-items: center;
+        .moreText{
+            font-weight: bold;
+        }
+    }
+  }
+}

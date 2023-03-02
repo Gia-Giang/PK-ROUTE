@@ -1,0 +1,15 @@
+
+
+@mixin animation-mixin($name) {
+    @keyframes #{$name} {
+        0% {
+            transform-origin: bottom right;
+            transform: rotate(30deg);
+        }
+        100%{
+            transform-origin: bottom left 
+        }
+    }
+}
+
+@include animation-mixin(to-yellow);

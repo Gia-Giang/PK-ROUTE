@@ -1,0 +1,31 @@
+.shop{
+    width: 1200px;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-text{
+            margin: 50px 0;
+        }
+        &-right{
+            a{
+                text-decoration: none;
+            }
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    .productWrapper{
+        display: flex;
+        .product{
+            flex: 3;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .categories{
+            flex: 1;
+        }
+    }
+}
