@@ -4,6 +4,9 @@ import { Select } from "antd";
 import * as AI from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
+
+import dataProduct from "../../fakeData";
+import Product from "../../components/Product";
 import "./style.scss";
 
 const Shop = () => {
@@ -27,6 +30,7 @@ const Shop = () => {
         <div className="product">
           <div className="search">
             <Select
+              className="section"
               showSearch
               placeholder="Select a person"
               optionFilterProp="children"
@@ -52,6 +56,14 @@ const Shop = () => {
                 },
               ]}
             />
+            <span className="product-total">
+              Showing all <b>{dataProduct.length}</b> results
+            </span>
+          </div>
+          <div className="product-item">
+            {dataProduct.map((item: any) => (
+              <Product {...item} limitElemet={3} />
+            ))}
           </div>
         </div>
         <div className="categories"></div>

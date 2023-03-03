@@ -9,10 +9,11 @@ export type PropsProduct = {
   img: any;
   name: string;
   price: string;
+  limitElemet?: 3 | "";
 };
 const Product = (item: PropsProduct) => {
   return (
-    <div className="item">
+    <div className={`item${item.limitElemet ? item.limitElemet : ""}`}>
       <img className="img-ideas" src={item.img} />
       <div className="item-price">
         <div className="name">
